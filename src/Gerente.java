@@ -10,7 +10,12 @@ public class Gerente extends Funcionario {
     @Override
     public void calcularSalario(){
         double salarioFinal = getSalarioBase() + bonus;
-        System.out.printf("Salário do gerente: R$ %.2f%n", salarioFinal);
+        System.out.printf("Salário: R$ %.2f%n", salarioFinal);
+    }
+
+    @Override
+    public String getCargo(){
+        return "Gerente";
     }
 
     public double getBonus(){

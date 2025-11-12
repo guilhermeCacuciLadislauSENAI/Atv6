@@ -10,7 +10,12 @@ public class Desenvolvedor extends Funcionario {
     @Override
     public void calcularSalario(){
         double salarioFinal = getSalarioBase() + (quantidadeProjetos * 500);
-        System.out.printf("Salário do desenvolvedor: R$ %.2f%n", salarioFinal);
+        System.out.printf("Salário: R$ %.2f%n", salarioFinal);
+    }
+
+    @Override
+    public String getCargo(){
+        return "Desenvolvedor";
     }
 
     public int getQuantidadeProjetos(){

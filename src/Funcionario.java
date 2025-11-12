@@ -14,4 +14,6 @@ abstract class Funcionario {
     public void setSalarioBase(double salarioBase){this.salarioBase = salarioBase;}
 
     public abstract void calcularSalario();
+
+    public abstract String getCargo();
 }
